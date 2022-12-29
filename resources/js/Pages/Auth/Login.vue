@@ -30,7 +30,9 @@ const submit = () => {
 </script>
 
 <template>
-    <Head title="Login" />
+    <Head>
+        <title>Your page title</title>
+    </Head>
 
     <AuthenticationCard>
         <template #logo>
