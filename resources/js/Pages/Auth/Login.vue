@@ -37,6 +37,7 @@ const submit = () => {
     <Head title="Login"/>
 
     <nav class="panel-menu" id="mobile-menu">
+        <ul></ul>
         <div class="mm-navbtn-names">
             <div class="mm-closebtn">
                 Close
@@ -55,7 +56,7 @@ const submit = () => {
             <div class="tt-loginpages-wrapper">
                 <div class="tt-loginpages">
                     <a class="tt-block-title" href="index-2.html">
-                        <img alt="" src="assets/users/images/logo.png">
+                        <img alt="" :src="'assets/users/images/logo.png'">
                         <div class="tt-title">
                             Welcome to Instantlook
                         </div>
@@ -90,7 +91,7 @@ const submit = () => {
                                 </div>
                             </div>
                             <div class="col ml-auto text-right">
-                                <a class="tt-underline" href="#">Forgot Password</a>
+                                <Link class="tt-underline" :href="route('password.request')">Forgot Password</Link>
                             </div>
                         </div>
                         <div class="form-group">
@@ -124,7 +125,7 @@ const submit = () => {
                             </div>
                         </div>
                         <p>Don’t have an account?
-                            <Link class="tt-underline" href="/register">Register here!</Link>
+                            <Link class="tt-underline" :href="route('register')">Register here!</Link>
                         </p>
                         <div class="tt-notes">
                             By Logging in, signing in or continuing, I agree to Instantlook’s <a class="tt-underline"
