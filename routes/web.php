@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\Foundation\Application;
+use App\Http\Controllers\Users\CategoryController;
+use App\Http\Controllers\Users\MainController;
+use App\Http\Controllers\Users\TopicController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -15,17 +17,23 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Admin Routes
 
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+// Users Routes
+Route::group(['as' => 'users.'], function () {
+    // Main Pages
+    Route::get('/', [MainController::class, 'homePage'])->name('homepage'); // Homepages
+    Route::get('/guidelines', [MainController::class, 'guidelines'])->name('guidelines'); // Guidelines
+
+    // Categories
+    Route::get('/categories', [CategoryController::class, 'list'])->name('categories-list');
+
+    // Topic
+    Route::resource('/topic', TopicController::class);
+
+    Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
+        Route::get('/dashboard', function () {
+            return Inertia::render('Dashboard');
+        })->name('dashboard');
+    });
 });

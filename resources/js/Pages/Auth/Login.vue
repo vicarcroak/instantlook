@@ -29,7 +29,6 @@ const submit = () => {
         onFinish: () => form.reset('password'),
     });
 };
-
 </script>
 
 
