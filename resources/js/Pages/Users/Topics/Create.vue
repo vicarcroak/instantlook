@@ -1,7 +1,4 @@
 <script setup>
-// Import Component
-import { Link } from '@inertiajs/inertia-vue3';
-
 // Import External JS File
 import '../../../../../public/assets/users/js/bundle.js'
 

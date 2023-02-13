@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\Users\CategoryController;
 use App\Http\Controllers\Users\MainController;
+use App\Http\Controllers\Users\MemberController;
 use App\Http\Controllers\Users\TopicController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,14 +26,17 @@ Route::group(['as' => 'users.'], function () {
     Route::get('/guidelines', [MainController::class, 'guidelines'])->name('guidelines'); // Guidelines
 
     // Categories
-    Route::get('/categories', [CategoryController::class, 'list'])->name('categories-list');
+    Route::get('/category', [CategoryController::class, 'index'])->name('categories-list'); // Categories List
+    Route::get('/category/{id}', [CategoryController::class, 'detail'])->name('categories-detail'); // Category Detail
 
     // Topic
     Route::resource('/topic', TopicController::class);
 
+    // Members
+    Route::resource('/member', MemberController::class);
+
+    // Dashboard
     Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
-        Route::get('/dashboard', function () {
-            return Inertia::render('Dashboard');
-        })->name('dashboard');
+        Route::get('/dashboard', [MainController::class, 'dashboard'])->name('dashboard');
     });
 });

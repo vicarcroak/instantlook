@@ -2,7 +2,9 @@
 
 namespace App\Exceptions;
 
+use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Inertia\Inertia;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -46,5 +48,20 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    public function render($request, Exception|Throwable $e)
+    {
+        if ($this->isHttpException($e)) {
+            if ($e->getStatusCode() == 404) {
+                return Inertia::render('Errors/404', ['status' => 404]);
+            }
+
+            if ($e->getStatusCode() == 500) {
+                return Inertia::render('Errors/404', ['status' => 500]);
+            }
+        }
+
+        return parent::render($request, $e);
     }
 }

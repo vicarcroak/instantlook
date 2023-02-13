@@ -19,4 +19,10 @@ class MainController extends Controller
     {
         return Inertia::render('Guidelines');
     }
+
+    // Return [GET] : Dashboard
+    public function dashboard(): Response
+    {
+        return Inertia::render('Dashboard');
+    }
 }

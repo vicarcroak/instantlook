@@ -7,26 +7,26 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Response;
 
-class TopicController extends Controller
+class MemberController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
-    public function index(): Response
+    public function index()
     {
-        return Inertia::render('');
+        //
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return \Illuminate\Http\Response
      */
-    public function create(): Response
+    public function create()
     {
-        return Inertia::render('Users/Topics/Create');
+        //
     }
 
     /**
@@ -48,7 +48,7 @@ class TopicController extends Controller
      */
     public function show($id): Response
     {
-        return Inertia::render('Users/Topics/Detail');
+        return Inertia::render('Users/Members/Detail');
     }
 
     /**

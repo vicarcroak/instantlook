@@ -1,16 +1,13 @@
 <script setup>
 // Import External JS File
-import '../../../public/assets/users/js/bundle.js'
+import '../../../../../public/assets/users/js/bundle.js'
 
 // Import Layout
 import UsersLayout from "@/Layouts/UsersLayout.vue";
-
-// Import Component
-import { Link } from '@inertiajs/inertia-vue3';
 </script>
 
 <template>
-    <UsersLayout title="Dashboard">
+    <UsersLayout title="Member Detail">
         <main class="tt-offset-small" id="tt-pageContent">
             <div class="tt-wrapper-section">
                 <div class="container">
