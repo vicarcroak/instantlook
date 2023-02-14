@@ -1,5 +1,5 @@
 <script setup>
-import '../../../../public/assets/users/js/bundle.js'
+import '../../../../../public/assets/users/js/bundle.js'
 
 // Import Layout
 import UsersLayout from "@/Layouts/UsersLayout.vue";

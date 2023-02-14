@@ -10,14 +10,12 @@ defineProps({
 </script>
 
 <template>
-    <!-- Title Page -->
+    <!-- title-page -->
     <Head :title="title"/>
 
     <!-- mobile-menu -->
     <nav class="panel-menu" id="mobile-menu">
-        <ul>
-
-        </ul>
+        <ul></ul>
         <div class="mm-navbtn-names">
             <div class="mm-closebtn">
                 Close
@@ -32,9 +30,138 @@ defineProps({
     </nav>
 
     <!-- header -->
-    <UserHeader/>
+    <header id="tt-header">
+        <div class="container">
+            <div class="row tt-row no-gutters">
+                <div class="col-auto">
 
-    <!-- Content -->
+                    <a class="toggle-mobile-menu" href="#">
+                        <svg class="tt-icon">
+                            <use xlink:href="#icon-menu_icon"></use>
+                        </svg>
+                    </a>
+
+                    <div class="tt-logo">
+                        <Link :href="route('users.homepage')"><img alt="" src="../../../public/assets/users/images/logo.png"/>
+                        </Link>
+                    </div>
+
+                    <div class="tt-desktop-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <Link :href="route('users.categories-list')"><span>Categories</span></Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/"><span>Topics</span></Link>
+                                </li>
+
+                                <li>
+                                    <Link :href="route('users.member.index')"><span>Member</span></Link>
+                                </li>
+
+                                <li>
+                                    <Link :href="route('users.guidelines')"><span>Guidelines</span></Link>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="tt-search">
+
+                        <button class="tt-search-toggle" data-target="#modalAdvancedSearch" data-toggle="modal">
+                            <svg class="tt-icon">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </button>
+
+                        <form class="search-wrapper">
+                            <div class="search-form">
+                                <input class="tt-search__input" placeholder="Search" type="text">
+                                <button class="tt-search__btn" type="submit">
+                                    <svg class="tt-icon">
+                                        <use xlink:href="#icon-search"></use>
+                                    </svg>
+                                </button>
+                                <button class="tt-search__close">
+                                    <svg class="tt-icon">
+                                        <use xlink:href="#cancel"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search-results">
+                                <div class="tt-search-scroll">
+                                    <ul>
+                                        <li>
+                                            <Link href="page-single-topic.html">
+                                                <h6 class="tt-title">Rdr2 secret easter eggs</h6>
+                                                <div class="tt-description">
+                                                    Here’s what I’ve found in Red Dead Redem..
+                                                </div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="page-single-topic.html">
+                                                <h6 class="tt-title">Top 10 easter eggs in Red Dead Rede..</h6>
+                                                <div class="tt-description">
+                                                    You can find these easter eggs in Red Dea..
+                                                </div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="page-single-topic.html">
+                                                <h6 class="tt-title">Red Dead Redemtion: Arthur Morgan..</h6>
+                                                <div class="tt-description">
+                                                    Here’s what I’ve found in Red Dead Redem..
+                                                </div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="page-single-topic.html">
+                                                <h6 class="tt-title">Rdr2 secret easter eggs</h6>
+                                                <div class="tt-description">
+                                                    Here’s what I’ve found in Red Dead Redem..
+                                                </div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="page-single-topic.html">
+                                                <h6 class="tt-title">Top 10 easter eggs in Red Dead Rede..</h6>
+                                                <div class="tt-description">
+                                                    You can find these easter eggs in Red Dea..
+                                                </div>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="page-single-topic.html">
+                                                <h6 class="tt-title">Red Dead Redemtion: Arthur Morgan..</h6>
+                                                <div class="tt-description">
+                                                    Here’s what I’ve found in Red Dead Redem..
+                                                </div>
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="tt-view-all" data-target="#modalAdvancedSearch" data-toggle="modal"
+                                        type="button">Advanced Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-auto ml-auto">
+                    <div class="tt-account-btn">
+                        <Link class="btn btn-primary" href="page-login.html">Log in</Link>
+                        <Link class="btn btn-secondary" href="page-signup.html">Sign up</Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
     <slot></slot>
 
     <!--  popup-settings  -->
@@ -139,6 +266,73 @@ defineProps({
         </svg>
         </span>
     </Link>
+
+    <!--  age-verification  -->
+    <div aria-hidden="true" aria-label="myModalLabel" class="modal fade" data-pause=250 id="modalAgeConfirmation" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button"></button>
+                </div>
+                <div class="tt-modal-confirmation">
+                    <div class="text-center">
+                        <h6 class="tt-title">
+                            Are you old enough?
+                        </h6>
+                        <p>You must be at least eighteen years old to view this threads.</p>
+                    </div>
+                    <div class="tt-confirmation-btn">
+                        <div class="tt-col">
+                            <a class="tt-option-btn" href="#">
+							<span class="tt-icon">
+								<svg><use xlink:href="#icon-exit"></use></svg>
+							</span>
+                                <span class="btn btn-primary">No Thank You</span>
+                            </a>
+                        </div>
+                        <div class="tt-col">
+                            <a class="tt-option-btn" data-dismiss="modal" href="#">
+							<span class="tt-icon">
+								<svg><use xlink:href="#icon-enter"></use></svg>
+							</span>
+                                <span class="btn btn-primary">Continue</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  level-up  -->
+    <div aria-hidden="true" aria-label="myModalLabel" class="modal fade" data-pause=250 id="modalLevelUp" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button"></button>
+                </div>
+                <div class="tt-modal-level-up">
+                    <div class="text-center">
+                        <h6 class="tt-title">
+                            Congratulations!
+                        </h6>
+                        <p>You’ve leveled up</p>
+                    </div>
+                    <a class="tt-option-btn" data-dismiss="modal" href="#">
+					<span class="tt-icon">
+						<svg><use xlink:href="#Level_Up"></use></svg>
+					</span>
+                        <div class="tt-badge-row">
+                            <span class="tt-color14 tt-badge">LVL : 26</span>
+                        </div>
+                        <span class="btn btn-primary">Awesome</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--  advanced-search  -->
     <div aria-hidden="true" aria-label="myModalLabel" class="modal fade" id="modalAdvancedSearch" role="dialog"

@@ -35,8 +35,12 @@ Route::group(['as' => 'users.'], function () {
     // Members
     Route::resource('/member', MemberController::class);
 
-    // Dashboard
+    // Subscription
+    Route::get('/subscription', [MainController::class, 'subscription'])->name('subscription');
+
+    // Auth Middleware
     Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
-        Route::get('/dashboard', [MainController::class, 'dashboard'])->name('dashboard');
+        Route::get('/dashboard', [MainController::class, 'dashboard'])->name('dashboard'); // Dashboard
+        Route::get('/messages', [MainController::class, 'messages'])->name('messages'); // Messages
     });
 });

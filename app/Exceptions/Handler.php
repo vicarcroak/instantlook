@@ -54,11 +54,11 @@ class Handler extends ExceptionHandler
     {
         if ($this->isHttpException($e)) {
             if ($e->getStatusCode() == 404) {
-                return Inertia::render('Errors/404', ['status' => 404]);
+                return Inertia::render('Users/Errors/404', ['status' => 404]);
             }
 
             if ($e->getStatusCode() == 500) {
-                return Inertia::render('Errors/404', ['status' => 500]);
+                return Inertia::render('Users/Errors/404', ['status' => 500]);
             }
         }
 

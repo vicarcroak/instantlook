@@ -11,80 +11,18 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
 
 <template>
     <UsersLayout title="Members">
-        <main id="tt-pageContent">
+        <main class="tt-offset-small" id="tt-pageContent">
             <div class="container">
-                <div class="tt-catSingle-title">
-                    <div class="tt-innerwrapper tt-row">
-                        <div class="tt-col-left">
-                            <ul class="tt-list-badge">
-                                <li><a href="#"><span class="tt-color01 tt-badge">politics</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="ml-left tt-col-right">
-                            <div class="tt-col-item">
-                                <h2 class="tt-value">Threads - 1,245</h2>
-                            </div>
-                            <div class="tt-col-item">
-                                <a class="tt-btn-icon" href="#">
-                                    <i class="tt-icon">
-                                        <svg>
-                                            <use xlink:href="#icon-favorite"></use>
-                                        </svg>
-                                    </i>
-                                </a>
-                            </div>
-                            <div class="tt-col-item">
-                                <div class="tt-search">
-                                    <button class="tt-search-toggle" data-target="#modalAdvancedSearch" data-toggle="modal">
-                                        <svg class="tt-icon">
-                                            <use xlink:href="#icon-search"></use>
-                                        </svg>
-                                    </button>
-                                    <form class="search-wrapper">
-                                        <div class="search-form">
-                                            <input class="tt-search__input" placeholder="Search in politics" type="text">
-                                            <button class="tt-search__btn" type="submit">
-                                                <svg class="tt-icon">
-                                                    <use xlink:href="#icon-search"></use>
-                                                </svg>
-                                            </button>
-                                            <button class="tt-search__close">
-                                                <svg class="tt-icon">
-                                                    <use xlink:href="#icon-cancel"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tt-innerwrapper">
-                        Lets discuss about whats happening around the world politics.
-                    </div>
-                    <div class="tt-innerwrapper">
-                        <h6 class="tt-title">Similar TAGS</h6>
-                        <ul class="tt-list-badge">
-                            <li><a href="#"><span class="tt-badge">world politics</span></a></li>
-                            <li><a href="#"><span class="tt-badge">human rights</span></a></li>
-                            <li><a href="#"><span class="tt-badge">trump</span></a></li>
-                            <li><a href="#"><span class="tt-badge">climate change</span></a></li>
-                            <li><a href="#"><span class="tt-badge">foreign policy</span></a></li>
-                            <li><a href="#"><span class="tt-badge">world politics</span></a></li>
-                            <li><a href="#"><span class="tt-badge">human rights</span></a></li>
-                            <li><a href="#"><span class="tt-badge">trump</span></a></li>
-                            <li><a href="#"><span class="tt-badge">climate change</span></a></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="tt-topic-list">
                     <div class="tt-list-header">
-                        <div class="tt-col-topic">Topic</div>
-                        <div class="tt-col-category">Category</div>
+                        <div class="tt-col-topic">Members</div>
                         <div class="tt-col-value hide-mobile">Likes</div>
                         <div class="tt-col-value hide-mobile">Replies</div>
                         <div class="tt-col-value hide-mobile">Views</div>
                         <div class="tt-col-value">Activity</div>
+                    </div>
+                    <div class="tt-topic-alert tt-alert-default" role="alert">
+                        <a href="#" target="_blank">4 new posts</a> are added recently, click here to load them.
                     </div>
                     <div class="tt-item tt-itemselect">
                         <div class="tt-col-avatar">
@@ -93,7 +31,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 <svg class="tt-icon">
                                     <use xlink:href="#icon-pinned"></use>
                                 </svg>
@@ -126,17 +64,17 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 <svg class="tt-icon">
                                     <use xlink:href="#icon-locked"></use>
                                 </svg>
                                 We’re removing Envato Credits from Market
                             </a></h6>
-                            <div class="row align-items-center no-gutters hide-desktope">
+                            <div class="row align-items-center no-gutters  hide-desktope">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color02 tt-badge">video</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -144,7 +82,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color02 tt-badge">video</span></div>
                         <div class="tt-col-value hide-mobile">584</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">35</div>
                         <div class="tt-col-value hide-mobile">1.3k</div>
@@ -157,14 +95,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 Web Hosting Packages for ThemeForest WordPress
                             </a></h6>
                             <div class="row align-items-center no-gutters">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
                                         <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                            class="tt-color03 tt-badge">exchange</span></a></li>
                                         <li><a href="#"><span class="tt-badge">themeforest</span></a></li>
                                         <li><a href="#"><span class="tt-badge">elements</span></a></li>
                                     </ul>
@@ -174,7 +112,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color03 tt-badge">exchange</span></div>
                         <div class="tt-col-value  hide-mobile">401</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">975</div>
                         <div class="tt-col-value  hide-mobile">12.6k</div>
@@ -187,14 +125,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 Review Queue Changes for VideoHive & PhotoDune
                             </a></h6>
                             <div class="row align-items-center no-gutters">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color04 tt-badge">pets</span></a>
+                                        </li>
                                         <li><a href="#"><span class="tt-badge">videohive</span></a></li>
                                         <li><a href="#"><span class="tt-badge">photodune</span></a></li>
                                     </ul>
@@ -204,7 +142,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color04 tt-badge">pets</span></div>
                         <div class="tt-col-value  hide-mobile">308</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">660</div>
                         <div class="tt-col-value  hide-mobile">8.3k</div>
@@ -217,14 +155,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 Does Envato act against the authors of Envato markets?
                             </a></h6>
-                            <div class="row align-items-center no-gutters hide-desktope">
+                            <div class="row align-items-center no-gutters  hide-desktope">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color05 tt-badge">music</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -232,7 +170,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color05 tt-badge">music</span></div>
                         <div class="tt-col-value hide-mobile">358</div>
                         <div class="tt-col-value tt-color-select hide-mobile">68</div>
                         <div class="tt-col-value hide-mobile">8.3k</div>
@@ -245,17 +183,17 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 <svg class="tt-icon">
                                     <use xlink:href="#icon-locked"></use>
                                 </svg>
                                 We Want to Hear From You! What Would You Like?
                             </a></h6>
-                            <div class="row align-items-center no-gutters hide-desktope">
+                            <div class="row align-items-center no-gutters  hide-desktope">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color06 tt-badge">movies</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -263,11 +201,30 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color06 tt-badge">movies</span></div>
                         <div class="tt-col-value hide-mobile">671</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">29</div>
                         <div class="tt-col-value hide-mobile">1.3k</div>
                         <div class="tt-col-value hide-mobile">2d</div>
+                    </div>
+                    <div class="tt-item tt-item-popup">
+                        <div class="tt-col-avatar">
+                            <svg class="tt-icon">
+                                <use xlink:href="#icon-ava-f"></use>
+                            </svg>
+                        </div>
+                        <div class="tt-col-message">
+                            Looks like you are new here. Register for free, learn and contribute.
+                        </div>
+                        <div class="tt-col-btn">
+                            <button class="btn btn-primary" type="button">Log in</button>
+                            <button class="btn btn-secondary" type="button">Sign up</button>
+                            <button class="btn-icon" type="button">
+                                <svg class="tt-icon">
+                                    <use xlink:href="#icon-cancel"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <div class="tt-item">
                         <div class="tt-col-avatar">
@@ -276,14 +233,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 Cannot customize my intro
                             </a></h6>
                             <div class="row align-items-center no-gutters">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color07 tt-badge">video games</span></a>
+                                        </li>
                                         <li><a href="#"><span class="tt-badge">videohive</span></a></li>
                                         <li><a href="#"><span class="tt-badge">photodune</span></a></li>
                                     </ul>
@@ -293,7 +250,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color07 tt-badge">video games</span></div>
                         <div class="tt-col-value hide-mobile">364</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">36</div>
                         <div class="tt-col-value  hide-mobile">982</div>
@@ -306,7 +263,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 <svg class="tt-icon">
                                     <use xlink:href="#icon-verified"></use>
                                 </svg>
@@ -314,9 +271,9 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </a></h6>
                             <div class="row align-items-center no-gutters hide-desktope">
                                 <div class="col-11">
-                                    <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                    <ul class="tt-list-badge ">
+                                        <li class="show-mobile"><a href="#"><span class="tt-color08 tt-badge">youtube</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -324,7 +281,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color08 tt-badge">youtube</span></div>
                         <div class="tt-col-value  hide-mobile">698</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">78</div>
                         <div class="tt-col-value  hide-mobile">2.1k</div>
@@ -337,14 +294,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 First website template got rejected.
                             </a></h6>
-                            <div class="row align-items-center no-gutters hide-desktope">
+                            <div class="row align-items-center no-gutters  hide-desktope">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color09 tt-badge">social</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -352,7 +309,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color09 tt-badge">social</span></div>
                         <div class="tt-col-value  hide-mobile">12</div>
                         <div class="tt-col-value tt-color-select  hide-mobile">3</div>
                         <div class="tt-col-value  hide-mobile">268</div>
@@ -365,7 +322,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 <svg class="tt-icon">
                                     <use xlink:href="#icon-pinned"></use>
                                 </svg>
@@ -374,8 +331,8 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             <div class="row align-items-center no-gutters">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color10 tt-badge">science</span></a>
+                                        </li>
                                         <li><a href="#"><span class="tt-badge">contests</span></a></li>
                                         <li><a href="#"><span class="tt-badge">authors</span></a></li>
                                     </ul>
@@ -385,7 +342,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color10 tt-badge">science</span></div>
                         <div class="tt-col-value hide-mobile">274</div>
                         <div class="tt-col-value tt-color-select hide-mobile">114</div>
                         <div class="tt-col-value  hide-mobile">2.3k</div>
@@ -398,7 +355,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 <svg class="tt-icon">
                                     <use xlink:href="#icon-locked"></use>
                                 </svg>
@@ -408,7 +365,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
                                         <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                            class="tt-color11 tt-badge">entertainment</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -416,7 +373,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color11 tt-badge">entertainment</span></div>
                         <div class="tt-col-value hide-mobile">657</div>
                         <div class="tt-col-value tt-color-select hide-mobile">177</div>
                         <div class="tt-col-value hide-mobile">2.6k</div>
@@ -429,14 +386,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 Why all my affiliate balance is pending?
                             </a></h6>
                             <div class="row align-items-center no-gutters">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
                                         <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                            class="tt-color03 tt-badge">exchange</span></a></li>
                                         <li><a href="#"><span class="tt-badge">themeforest</span></a></li>
                                         <li><a href="#"><span class="tt-badge">elements</span></a></li>
                                     </ul>
@@ -446,7 +403,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color03 tt-badge">exchange</span></div>
                         <div class="tt-col-value hide-mobile">37</div>
                         <div class="tt-col-value tt-color-select hide-mobile">31</div>
                         <div class="tt-col-value hide-mobile">257</div>
@@ -459,14 +416,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 Google snippets wordpress plugin
                             </a></h6>
                             <div class="row align-items-center no-gutters">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color04 tt-badge">pets</span></a>
+                                        </li>
                                         <li><a href="#"><span class="tt-badge">videohive</span></a></li>
                                         <li><a href="#"><span class="tt-badge">photodune</span></a></li>
                                     </ul>
@@ -476,7 +433,7 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color04 tt-badge">pets</span></div>
                         <div class="tt-col-value hide-mobile">987</div>
                         <div class="tt-col-value tt-color-select hide-mobile">271</div>
                         <div class="tt-col-value hide-mobile">3.8k</div>
@@ -489,14 +446,14 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                             </svg>
                         </div>
                         <div class="tt-col-description">
-                            <h6 class="tt-title"><a href="#">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
                                 How to use Team Listing?
                             </a></h6>
                             <div class="row align-items-center no-gutters hide-desktope">
                                 <div class="col-11">
                                     <ul class="tt-list-badge">
-                                        <li class="show-mobile"><a href="#"><span
-                                            class="tt-color01 tt-badge">politics</span></a></li>
+                                        <li class="show-mobile"><a href="#"><span class="tt-color09 tt-badge">social</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-1 ml-auto show-mobile">
@@ -504,10 +461,101 @@ import UsersLayout from "@/Layouts/UsersLayout.vue";
                                 </div>
                             </div>
                         </div>
-                        <div class="tt-col-category"><span class="tt-color01 tt-badge">politics</span></div>
+                        <div class="tt-col-category"><span class="tt-color09 tt-badge">social</span></div>
                         <div class="tt-col-value hide-mobile">324</div>
                         <div class="tt-col-value tt-color-select hide-mobile">163</div>
                         <div class="tt-col-value hide-mobile">2.3k</div>
+                        <div class="tt-col-value hide-mobile">5d</div>
+                    </div>
+                    <div class="tt-item">
+                        <div class="tt-col-avatar">
+                            <svg class="tt-icon">
+                                <use xlink:href="#icon-ava-r"></use>
+                            </svg>
+                        </div>
+                        <div class="tt-col-description">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
+                                <svg class="tt-icon">
+                                    <use xlink:href="#icon-locked"></use>
+                                </svg>
+                                Can’t change image on main page of Coaching Theme
+                            </a></h6>
+                            <div class="row align-items-center no-gutters hide-desktope">
+                                <div class="col-11">
+                                    <ul class="tt-list-badge">
+                                        <li class="show-mobile"><a href="#"><span class="tt-color02 tt-badge">video</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-1 ml-auto show-mobile">
+                                    <div class="tt-value">5d</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tt-col-category"><span class="tt-color02 tt-badge">video</span></div>
+                        <div class="tt-col-value hide-mobile">879</div>
+                        <div class="tt-col-value tt-color-select hide-mobile">237</div>
+                        <div class="tt-col-value hide-mobile">4.5k</div>
+                        <div class="tt-col-value hide-mobile">5d</div>
+                    </div>
+                    <div class="tt-item">
+                        <div class="tt-col-avatar">
+                            <svg class="tt-icon">
+                                <use xlink:href="#icon-ava-b"></use>
+                            </svg>
+                        </div>
+                        <div class="tt-col-description">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
+                                Documentation on Glitch package usage?
+                            </a></h6>
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-11">
+                                    <ul class="tt-list-badge">
+                                        <li class="show-mobile"><a href="#"><span class="tt-color12 tt-badge">arts</span></a>
+                                        </li>
+                                        <li><a href="#"><span class="tt-badge">themeforest</span></a></li>
+                                        <li><a href="#"><span class="tt-badge">elements</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-1 ml-auto show-mobile">
+                                    <div class="tt-value">5d</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tt-col-category"><span class="tt-color12 tt-badge">arts</span></div>
+                        <div class="tt-col-value hide-mobile">726</div>
+                        <div class="tt-col-value tt-color-select hide-mobile">246</div>
+                        <div class="tt-col-value hide-mobile">7.6k</div>
+                        <div class="tt-col-value hide-mobile">5d</div>
+                    </div>
+                    <div class="tt-item">
+                        <div class="tt-col-avatar">
+                            <svg class="tt-icon">
+                                <use xlink:href="#icon-ava-a"></use>
+                            </svg>
+                        </div>
+                        <div class="tt-col-description">
+                            <h6 class="tt-title"><a href="page-single-topic.html">
+                                Woohoo! You’ve made it. Welcome to the Elite Club
+                            </a></h6>
+                            <div class="row align-items-center no-gutters">
+                                <div class="col-11">
+                                    <ul class="tt-list-badge">
+                                        <li class="show-mobile"><a href="#"><span class="tt-color04 tt-badge">pets</span></a>
+                                        </li>
+                                        <li><a href="#"><span class="tt-badge">videohive</span></a></li>
+                                        <li><a href="#"><span class="tt-badge">photodune</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-1 ml-auto show-mobile">
+                                    <div class="tt-value">5d</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tt-col-category"><span class="tt-color04 tt-badge">pets</span></div>
+                        <div class="tt-col-value hide-mobile">674</div>
+                        <div class="tt-col-value tt-color-select hide-mobile">128</div>
+                        <div class="tt-col-value hide-mobile">1.3k</div>
                         <div class="tt-col-value hide-mobile">5d</div>
                     </div>
                     <div class="tt-row-btn">
