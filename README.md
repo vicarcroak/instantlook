@@ -44,4 +44,4 @@ git stash pop
 git push origin "<categories>/<name_features_or_fixes>"
 ```
 
-### Ready And GO!
+### Ready And GO! 
